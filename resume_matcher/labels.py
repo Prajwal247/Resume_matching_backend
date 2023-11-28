@@ -1,0 +1,93 @@
+labels = {
+    "Data Science": 0,
+    "HR": 1,
+    "Advocate": 2,
+    "Arts": 3,
+    "Web Designing": 4,
+    "Mechanical Engineer": 5,
+    "Sales": 6,
+    "Health and fitness": 7,
+    "Civil Engineer": 8,
+    "Java Developer": 9,
+    "Business Analyst": 10,
+    "SAP Developer": 11,
+    "Automation Testing": 12,
+    "Electrical Engineering": 13,
+    "Operations Manager": 14,
+    "Python Developer": 15,
+    "DevOps Engineer": 16,
+    "Network Security Engineer": 17,
+    "PMO": 18,
+    "Database": 19,
+    "Hadoop": 20,
+    "ETL Developer": 21,
+    "DotNet Developer": 22,
+    "Blockchain": 23,
+    "Testing": 24,
+}
+
+relations = {
+    "Data Science":[
+        'R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', 
+    ],
+    "HR":['Retail Sales', 'Institutional Sales', 'Operations','Accounts','Project Management','Senior Management', 'HR/ Recruitment / IR'],
+    "Advocate":['Accounts','Finance/Audit','Public Relations','Operations/Processes/Finance/Legal'],
+    "Arts":['Corporate Planning/Consulting/Strategy','Creative'],
+    "Web Designing":['R&D','Programming & Design','Engineering Design','QA/Testing/Documentation','Project Management'],
+    "Mechanical Engineering":['R&D','Corporate Planning/Consulting/Strategy', 'Operations','Engineering Design','Project Management','Architectural Services',],
+    "Sales":['Retail Sales','Institutional Sales','Online/Digital Marketing','Corporate Sales','Channel Sales', 'Sales Support',],
+    "Health and fitness":['Medical Professional',],
+    "Civil Engineer":['R&D','Corporate Planning/Consulting/Strategy', 'Operations','Engineering Design','Project Management','Architectural Services',],
+    "Java Developer":[
+        'R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', 
+    ],
+    "Business Analyst":['Retail Sales','Institutional Sales','Online/Digital Marketing','Analytics & BI'],
+    "SAP Developer": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management',],
+    "Automation Testing": ['R&D','QA/Testing/Documentation'],
+    "Electrical Engineering": ['Engineering Design'],
+    "Operations Manager": ['Operations/Processes/Finance/Legal','Administration/Facility Management','Project Management'],
+    "Python Developer": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "DevOps Engineer": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "Network Security Engineer": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "PMO": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "Database": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "Hadoop": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "ETL Developer": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "DotNet Developer": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "Blockchain": ['R&D', 'Programming & Design', 'Engineering Design', 'QA/Testing/Documentation','Project Management', ],
+    "Testing": ['R&D', 'Programming & Design', 'QA/Testing/Documentation', ]
+}
+
+
+Keywords = ["education",
+            "summary",
+            "accomplishments",
+            "executive profile",
+            "professional profile",
+            "personal profile",
+            "work background",
+            "academic profile",
+            "other activities",
+            "qualifications",
+            "experience",
+            "interests",
+            "skills",
+            "achievements",
+            "publications",
+            "publication",
+            "certifications",
+            "workshops",
+            "projects",
+            "internships",
+            "trainings",
+            "hobbies",
+            "overview",
+            "objective",
+            "position of responsibility",
+            "jobs"
+           ]
+def get_label_for_value(index):
+    for label, value in labels.items():
+        if value == index:
+            return label
+    return None
